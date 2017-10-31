@@ -1,0 +1,28 @@
+{
+  "name": "mystorya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "aws-sdk": "^2.117.0",
+    "body-parser": "^1.18.0",
+    "express": "^4.15.4",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyStorya/Mystorya.git"
+  },
+  "author": "James DeChavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MyStorya/MyStorya/issues"
+  },
+  "homepage": "https://github.com/MyStorya/MyStorya#readme"
+}

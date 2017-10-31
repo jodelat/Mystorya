@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "mystorya",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "bfa315856bb269",
+    "password": "a84941a7",
+    "database": "heroku_7aedb56ee7af001",
+    "host": "us-cdbr-iron-east-05.cleardb.net",
+    "dialect": "mysql"
+  }
+}

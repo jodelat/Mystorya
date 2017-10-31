@@ -1,0 +1,239 @@
+#storyBackground{
+	min-height: 500px;
+	background-color: lightblue; 
+	border: solid black 1px;
+}
+
+#leftPage, #rightPage{
+	background-color: white;
+	min-height: 490px;
+	margin-top: 5px;
+	border: solid black 1px;
+}
+
+#flipbook{
+    width:900px;
+    height:500px;
+}
+
+#flipbook .page{
+    width:900px;
+    height:500px;
+    background-color:white;
+    font-size:10px;
+    text-align:center;
+}
+
+#flipbook .page-wrapper{
+    -webkit-perspective:2000px;
+    -moz-perspective:2000px;
+    -ms-perspective:2000px;
+    -o-perspective:2000px;
+    perspective:2000px;
+}
+
+#flipbook .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+.bookImage{
+	width: 100%;
+	height: 100%;
+	border: solid black 1px;
+}
+
+.page{
+	border: solid black 1px;
+	padding: 10px;
+}
+
+#storyBodyLeft{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.coverText{
+  position: absolute;
+  top: 10%;
+  left:10px;
+  right:10px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+#coverTitle{
+  background-color: rgba(5, 5, 5, 0.3);
+  padding: 3px;
+  border: solid 1px rgba(165, 165, 165, 0.34)
+}
+
+#coverAuthor{
+  background-color: rgba(5, 5, 5, 0.3);
+  padding: 3px;
+  border: solid 1px rgba(165, 165, 165, 0.34)
+}
+
+#storyImage{
+    width: 90%;
+    height: 40%;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #f5f5f5;
+  vertical-align: middle;
+  border-top: solid 1px lightgrey;
+}
+
+.footer-logo{
+  padding-top: 10px;
+  vertical-align: middle;
+  height:80px;
+  margin-top: 20px;
+}
+
+.company-info-title{
+  text-decoration: underline;
+
+}
+
+.container .company-info{
+  font-size: 13px;
+  font-family: "didot";
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.container .text-muted{
+padding-top: 10px;
+  margin: 20px 0;
+  vertical-align: middle;
+}
+
+.container .social-icons{
+  margin: 30px 0;
+}
+
+#headerContainer{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#searchBox{
+  width: 50%;
+  padding-top: 20px;
+}
+
+.form-control-feedback{
+  margin-top: 20px;
+}
+
+
+.form-control-feedback {
+  margin-top: 20px;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+.glyphicon-align-justify{
+margin-top: 15px;
+}
+
+/* PROFILE SECTION */
+#profilePic{
+height: 150px;
+margin-bottom: 15px;
+margin-top: 30px;
+margin-left: 100px;
+}
+
+#editProfilePic{
+display: none;
+}
+
+#editProfile{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+input#myFile{
+margin-left: 10%
+}
+
+#profileRow{
+background-color: #F2F2F2;
+padding-top: 15px;
+border-bottom: solid 1px lightgrey;
+}
+
+.nav-pills{
+width: 50%;
+margin: auto;
+text-align: center;
+}
+
+#yourProfileButtons{
+width: 50%;
+display: block;
+margin: auto;
+text-align: center;
+margin-bottom: 15px;
+}
+
+#yourStories h3,
+#yourFavorites h3{
+margin-bottom: 30px;
+}
+
+#newStoryButton{
+background-color: transparent;
+padding: 0;
+border: none;
+margin-bottom: 20px;
+}
+
+#newStoryButton img{
+width: 150px;
+}
