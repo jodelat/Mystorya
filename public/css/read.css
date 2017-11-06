@@ -1,3 +1,35 @@
+
+/* HEADER NAVBAR AND MODAL SECTION */
+
+#headerContainer{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+
+.header-space{
+  height: 100%;
+  width:10%;
+  background-color: white;
+}
+
+#searchBox{
+  width: 80%;
+  padding-top: 20px;
+  display: block;
+  margin: auto;
+}
+
+.form-control-feedback {
+    margin-top: 20px;
+    margin-right: 5px;
+    z-index: 1;
+}
+
+.glyphicon-align-justify{
+  margin-top: 15px;
+}
+
 #storyBackground{
 	min-height: 500px;
 	background-color: lightblue; 
@@ -75,7 +107,7 @@
 .bookImage{
 	width: 100%;
 	height: 100%;
-	border: solid black 1px;
+	border: solid #979595 1px;
 }
 
 .page{
@@ -181,59 +213,53 @@ padding-top: 10px;
 margin-top: 15px;
 }
 
-/* PROFILE SECTION */
-#profilePic{
-height: 150px;
-margin-bottom: 15px;
-margin-top: 30px;
-margin-left: 100px;
+#searchBox{
+  width: 80%;
+  padding-top: 10px;
+  display: inline-block;
 }
 
-#editProfilePic{
-display: none;
+.searchBoxClass {
+  margin-left: 10%; 
+  margin-top: 15px;
+  background-color: grey;
 }
 
-#editProfile{
-margin-top: 10px;
-margin-bottom: 10px;
+body{
+  background-color: rgb(240, 240, 240);
 }
 
-input#myFile{
-margin-left: 10%
+.shelfTitle{
+  font-family: "new times roman";
+  color:black;
+  height: 35px;
+  margin-top: 10px;
+  /* margin-left: 15%;
+  margin-right: 70%; */ 
 }
 
-#profileRow{
-background-color: #F2F2F2;
-padding-top: 15px;
-border-bottom: solid 1px lightgrey;
+.shelf {
+    background-image: url("../img/wdshelf.png");
+    background-repeat: no-repeat;
+    background-position: bottom;  
+    margin-bottom: 20px;
 }
 
-.nav-pills{
-width: 50%;
-margin: auto;
-text-align: center;
+#userStories,
+#faveStories{
+  background-size: 100%;
 }
 
-#yourProfileButtons{
-width: 50%;
-display: block;
-margin: auto;
-text-align: center;
-margin-bottom: 15px;
+.leftScroll{
+  position: absolute;
+  left: -30px;
+  margin-top: 30%;
+  width: 40px;
 }
 
-#yourStories h3,
-#yourFavorites h3{
-margin-bottom: 30px;
-}
-
-#newStoryButton{
-background-color: transparent;
-padding: 0;
-border: none;
-margin-bottom: 20px;
-}
-
-#newStoryButton img{
-width: 150px;
+.rightScroll{
+  position: absolute;
+  right: -20px;
+  bottom: 45%;
+  width: 40px;
 }

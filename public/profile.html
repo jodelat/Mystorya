@@ -16,6 +16,7 @@
 
 <!-- NAVBAR SECTION -->
 <nav class="navbar navbar-default navbar-fixed-top navigation">
+        <div id="1A" class="row" style="background-color :white;">
     <div id="headerContainer" class="container"> 
 
         
@@ -28,7 +29,8 @@
         </div> 
 
         <!-- SEARCH BAR -->
-        <div class="col-sm-4 col-md-4 col-lg-4">
+       
+ <div class="col-sm-4 col-md-4 col-lg-4">
             <div id="searchBox" class="form-group has-feedback">
                 <input type="text" class="form-control text-center" placeholder="Search MyStorya"/>
                 <i class="glyphicon glyphicon-search form-control-feedback"></i>
@@ -56,26 +58,31 @@
 <br><br><br><br>
 <div class="container">
     <!-- main profile row -->
-    <div id="1A" class="row" style="background-color:lightgrey;">
+    <div id="1A" class="row" style="background-color :#F6F6F6;">
         <!-- profile pic -->
-        <div id="col1A" class="col-sm-6 col-md-6 col-lg-6">
-            <img id="profilePic" class="center-block" src="img/patProfile.png">
+        <div id="col1A" class="col-sm-4 col-md-4 col-lg-4">
+            <img id="profilePic" class="img-circle pull-right center-block" src="img/patProfile.png">
         </div>
         <!-- profile info -->
-        <div id="col2A" class="col-sm-6 col-md-6 col-lg-6">
-            <div id="1B" class="row" style="background-color:rgb(219, 139, 139);">
-                <div id="col1B" class="col-sm-6 col-md-6 col-lg-6">UserName</div>
+        <br>
+        <div id="col2A" class="col-sm-8 col-md-8 col-lg-8">
+            <div id="1B" class="row" style="background-color :#F6F6F6;">
+                <div id="col1B" class="col-sm-6 col-md-6 col-lg-6"><h2>pat_hustad<h2></div>
                 <div id="col2B" class="col-sm-6 col-md-6 col-lg-6">|<button type="button" id="editProfileButton" class="btn-primary btn btn-xs">Edit Profile</button></div>
             </div>
-            <div id="2B" class="row" style="background-color:rgb(157, 156, 228);">
-                <div id="col1C" class="col-sm-4 col-md-4 col-lg-4">999 STORIES</div>
-                <div id="col2C" class="col-sm-4 col-md-4 col-lg-4">| 999 Followers</div>
-                <div id="col3C" class="col-sm-4 col-md-4 col-lg-4">| 999 Following</div>
+            <br>
+            <div id="2B" class="row" style="background-color:#F6F6F6(157, 156, 228);">
+                <div id="col1C" class="col-sm-4 col-md-4 col-lg-4"><h4>999 STORIES<h4></div>
+                <div id="col2C" class="col-sm-4 col-md-4 col-lg-4"><h4> 999 Followers<h4></div>
+                <div id="col3C" class="col-sm-4 col-md-4 col-lg-4"><h4> 999 Following<h4></div>
             </div>
-            <div id="3B" class="row" style="background-color:rgb(146, 231, 146);">
-                <div id="col1D" class="col-sm-12 col-md-12 col-lg-12">BIO and WEBSITE
+            <br>
+            <div id="3B" class="row" style="background-color:#F6F6F6(146, 231, 146);">
+                <div id="col1D" class="col-sm-12 col-md-12 col-lg-12"><h4>P A T H U S T A D 🌴🌴🌴🌴🌴🌴jrehfdkghjsdkjghdfkx kjdfgh,kdfhzgdfskjh lfjghskgjhdfkls j www.pathustad.com<h4>
                 </div>
             </div>
+            <!-- This is the Create New Story Button -->
+<button type="submit" class ="btn-primary btn center-block">Create New Story <span class="glyphicon glyphicon-plus"> </span></button>
         </div> <!-- end of profile info -->
     </div> <!-- end of main profile row  -->
 <!-- secondary row. On insta these are called "post" and "saved" -->
@@ -88,7 +95,7 @@
 <!-- footer goes here -->
 
 <!-- PROFILE SECTION -->
-<div id="profileRow" class="row">
+<!-- <div id="profileRow" class="row">
 	<div class="container">
 
 		<div class="col-sm-3 col-md-3 col-lg-3">
@@ -105,7 +112,7 @@
 
 		</div> 
 
-		<div class="col-sm-9 col-md-9 col-lg-9">
+		<div class="col-sm-9 col-md-9 col-lg-9"> -->
 
 			<!-- <div class="tab-content"> -->
 
@@ -246,7 +253,7 @@
                     </div>
 				</div>		 -->
 
-				<div id="yourFriends" class="tab-pane fade">
+				<!-- <div id="yourFriends" class="tab-pane fade">
 					<h1>@pat_hustad</h1>
 				</div>					
 
@@ -289,25 +296,260 @@
 
 		</div> 
 
-	</div>
+	</div> -->
 
 </div>
 
 
 <!-- SEARCH BAR -->
-<div class="searchDiv col-sm-12 col-md-12 col-lg-12">
+<!-- <div class="searchDiv col-sm-12 col-md-12 col-lg-12">
         <div id="searchBox" class="searchBoxClass form-group has-feedback">
            <input type="text" class="form-control text-center" placeholder="Search MyStorya"/>
            <i class="glyphicon glyphicon-search form-control-feedback"></i>
         </div>
        </div> 
-</div>
-
+</div> -->
+<!-- This is the Create New Story Button -->
 <div id="shelfBackground">
-        <br>
-        <br>
+        <br><br>
+        <!-- This section holds the Latest Stories Book Shelf -->
+<h3 class="shelfTitle text-center">MY STORIES</h3>
+<div id="latestStories" class="row shelf">
+    <div class="container" style="padding-bottom: 17px;">
+        <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
+                <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
+                <a href="/read">
+                <div class="books">
+                      <div class="book">
+                         <img class="bookImage" src="img/patPic1.jpg" />
+                        <div class="overlay">
+                            <div class="text">MY PRINCESS</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/patPic2.jpg" />
+                        <div class="overlay">
+                            <div class="text">KAYMAN AND MAMA</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/patPic3.jpg" />
+                        <div class="overlay">
+                            <div class="text">BIG DADDY</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/patPic4.jpg" />
+                        <div class="overlay">
+                            <div class="text">BOK CHOI</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+            <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
+        </div>
+    </div>
+</div>
 <!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">N E W . S T O R I E S</h3>
+<h3 class="shelfTitle text-center">MY SOCIAL MEDIA</h3>
+<div id="latestStories" class="row shelf">
+    <div class="container" style="padding-bottom: 17px;">
+        <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
+                <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
+                <a href="/read">
+                <div class="books">
+                      <div class="book">
+                         <img class="bookImage" src="img/linkedin.png" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/fbImg.png" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/insta.png" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/twitter.png" />
+                        <div class="overlay">
+                            <div class="text">SHOP NOW</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+            <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!-- This section holds the Latest Stories Book Shelf -->
+<h3 class="shelfTitle text-center">MY STORIES</h3>
+<div id="latestStories" class="row shelf">
+    <div class="container" style="padding-bottom: 17px;">
+        <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
+                <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
+                <a href="/read">
+                <div class="books">
+                      <div class="book">
+                         <img class="bookImage" src="img/newstory1.png" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/newstory2.png" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/newstory3.jpg" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/newstory4.jpg" />
+                        <div class="overlay">
+                            <div class="text">SHOP NOW</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+            <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!-- This section holds the Latest Stories Book Shelf -->
+<h3 class="shelfTitle text-center">MY FAVORITES</h3>
+<div id="latestStories" class="row shelf">
+    <div class="container" style="padding-bottom: 17px;">
+        <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
+                <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
+                <a href="/read">
+                <div class="books">
+                      <div class="book">
+                         <img class="bookImage" src="img/newstory1.png" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/newstory2.png" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/newstory3.jpg" />
+                        <div class="overlay">
+                            <div class="text">Open Story</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+        </div>
+        <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
+            <a href="/read">
+                <div class="books">
+                      <div class="book">
+                        <img class="bookImage" src="img/newstory4.jpg" />
+                        <div class="overlay">
+                            <div class="text">SHOP NOW</div>
+                          </div>
+                      </div>
+                </div>
+            </a>
+            <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!-- This section holds the Latest Stories Book Shelf -->
+<h3 class="shelfTitle text-center">TRENDING</h3>
 <div id="latestStories" class="row shelf">
     <div class="container" style="padding-bottom: 17px;">
         <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
@@ -427,187 +669,7 @@
 <br>
 
 <!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">N E W . S T O R I E S</h3>
-<div id="latestStories" class="row shelf">
-    <div class="container" style="padding-bottom: 17px;">
-        <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
-                <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
-                <a href="/read">
-                <div class="books">
-                      <div class="book">
-                         <img class="bookImage" src="img/newstory1.png" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory2.png" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory3.jpg" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory4.jpg" />
-                        <div class="overlay">
-                            <div class="text">SHOP NOW</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-            <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
-        </div>
-    </div>
-</div>
-
-<br>
-<br>
-
-<!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">N E W . S T O R I E S</h3>
-<div id="latestStories" class="row shelf">
-    <div class="container" style="padding-bottom: 17px;">
-        <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
-                <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
-                <a href="/read">
-                <div class="books">
-                      <div class="book">
-                         <img class="bookImage" src="img/newstory1.png" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory2.png" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory3.jpg" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory4.jpg" />
-                        <div class="overlay">
-                            <div class="text">SHOP NOW</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-            <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
-        </div>
-    </div>
-</div>
-
-<br>
-<br>
-
-<!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">N E W . S T O R I E S</h3>
-<div id="latestStories" class="row shelf">
-    <div class="container" style="padding-bottom: 17px;">
-        <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
-                <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
-                <a href="/read">
-                <div class="books">
-                      <div class="book">
-                         <img class="bookImage" src="img/newstory1.png" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory2.png" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory3.jpg" />
-                        <div class="overlay">
-                            <div class="text">Open Story</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-        </div>
-        <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <a href="/read">
-                <div class="books">
-                      <div class="book">
-                        <img class="bookImage" src="img/newstory4.jpg" />
-                        <div class="overlay">
-                            <div class="text">SHOP NOW</div>
-                          </div>
-                      </div>
-                </div>
-            </a>
-            <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
-        </div>
-    </div>
-</div>
-
-<br>
-<br>
-
-<!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">N E W . S T O R I E S</h3>
+<h3 class="shelfTitle text-center">L A T E S T</h3>
 <div id="latestStories" class="row shelf">
     <div class="container" style="padding-bottom: 17px;">
         <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">

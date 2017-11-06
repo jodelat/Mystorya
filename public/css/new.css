@@ -1,3 +1,155 @@
+
+/* HEADER NAVBAR AND MODAL SECTION */
+
+#headerContainer{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+
+.header-space{
+  height: 100%;
+  width:10%;
+  background-color: white;
+}
+
+#searchBox{
+  width: 80%;
+  padding-top: 20px;
+  display: block;
+  margin: auto;
+}
+
+.form-control-feedback {
+    margin-top: 20px;
+    margin-right: 5px;
+    z-index: 1;
+}
+
+.glyphicon-align-justify{
+  margin-top: 15px;
+}
+
+#storyBackground{
+	min-height: 500px;
+	background-color: lightblue; 
+	border: solid black 1px;
+}
+
+#leftPage, #rightPage{
+	background-color: white;
+	min-height: 490px;
+	margin-top: 5px;
+	border: solid black 1px;
+}
+
+#flipbook{
+    width:900px;
+    height:500px;
+}
+
+#flipbook .page{
+    width:900px;
+    height:500px;
+    background-color:white;
+    font-size:10px;
+    text-align:center;
+}
+
+#flipbook .page-wrapper{
+    -webkit-perspective:2000px;
+    -moz-perspective:2000px;
+    -ms-perspective:2000px;
+    -o-perspective:2000px;
+    perspective:2000px;
+}
+
+#flipbook .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+.bookImage{
+	width: 100%;
+	height: 100%;
+	border: solid #979595 1px;
+}
+
+.page{
+	border: solid black 1px;
+	padding: 10px;
+}
+
+#storyBodyLeft{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.coverText{
+  position: absolute;
+  top: 10%;
+  left:10px;
+  right:10px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+#coverTitle{
+  background-color: rgba(5, 5, 5, 0.3);
+  padding: 3px;
+  border: solid 1px rgba(165, 165, 165, 0.34)
+}
+
+#coverAuthor{
+  background-color: rgba(5, 5, 5, 0.3);
+  padding: 3px;
+  border: solid 1px rgba(165, 165, 165, 0.34)
+}
+
+#storyImage{
+    width: 90%;
+    height: 40%;
+}
+
 .footer {
   position: relative;
   bottom: 0;
@@ -49,3 +201,66 @@ padding-top: 10px;
 .form-control-feedback{
   margin-top: 20px;
 }
+
+
+.form-control-feedback {
+  margin-top: 20px;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+.glyphicon-align-justify{
+margin-top: 15px;
+}
+
+#searchBox{
+  width: 80%;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.searchBoxClass {
+  margin-left: 10%; 
+  margin-top: 15px;
+  background-color: grey;
+}
+
+body{
+  background-color: rgb(240, 240, 240);
+}
+
+.shelfTitle{
+  font-family: "new times roman";
+  color:black;
+  height: 35px;
+  margin-top: 10px;
+  /* margin-left: 15%;
+  margin-right: 70%; */ 
+}
+
+.shelf {
+    background-image: url("../img/wdshelf.png");
+    background-repeat: no-repeat;
+    background-position: bottom;  
+    margin-bottom: 20px;
+}
+
+#userStories,
+#faveStories{
+  background-size: 100%;
+}
+
+.leftScroll{
+  position: absolute;
+  left: -30px;
+  margin-top: 30%;
+  width: 40px;
+}
+
+.rightScroll{
+  position: absolute;
+  right: -20px;
+  bottom: 45%;
+  width: 40px;
+}
+

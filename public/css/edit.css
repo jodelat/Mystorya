@@ -1,0 +1,204 @@
+/* HEADER NAVBAR */
+
+#headerContainer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+  }
+  
+  .header-space{
+    height: 100%;
+    width:10%;
+    background-color: white;
+  }
+  
+  #searchBox{
+    width: 80%;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+  }
+  /* #searchBox{
+    width: 80%;
+    padding-top: 10px;
+    display: inline-block;
+   
+  } */
+  
+  
+  .searchBoxClass {
+    margin-left: 10%; 
+    margin-top: 15px;
+    background-color: grey;
+  }    
+  
+  .form-control-feedback {
+      margin-top: 20px;
+      margin-right: 5px;
+      z-index: 1;
+  }
+  
+  .glyphicon-align-justify{
+    margin-top: 15px;
+  }
+  body{
+    background-color: rgb(240, 240, 240);
+  }
+
+  .navigation
+  {
+    text-align: center;
+  }
+
+  /* JUMBOTRON SECTION */
+.jumbotron{
+    height: 680px;
+    background-position: center;
+     /* background-image: url("../img/jumbotronBG.png");  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    background-color: #F6F6F6;
+  }
+  
+  #jumboText{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 0px;
+  }
+
+  /* FOOTER SECTION */
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #E8E8E8;
+    vertical-align: middle;
+    
+  }
+  
+  .footer-logo{
+    padding-top: 10px;
+    vertical-align: middle;
+    height:80px;
+    margin-top: 20px;
+  }
+  
+  .company-info-title{
+    text-decoration: underline;
+  
+  }
+  
+  .company-info{
+    font-size: 13px;
+    font-family: "georgia";
+    color:black;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .text-muted{
+  padding-top: 10px;
+    margin: 20px 0;
+    vertical-align: middle;
+  }
+  
+  .social-icons{
+    margin: 30px 0;
+  }
+  .social-icons{
+    margin-top: 30px;  
+  }
+  
+  .social-icons i{
+    margin-left: 15px !important; 
+  }
+  
+  #copyright{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+/* GREY SECTION */
+.contents{
+    margin-bottom: 75px;
+    background-image: url("../img/greyBackground.jpg");
+    background-size: contain;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+  }
+  
+  .greyPic{
+    height:300px;
+    width:300px;
+    display: block;
+    margin: 20px auto 20px auto;
+  }
+  
+  .greyText {
+    text-align: center;
+  
+  }
+
+  .signUpForm{
+  width: 70%;
+ height: 70%;
+border:  2px solid #CACACA;
+
+}
+
+.signUpBtn {
+  margin-bottom: 30px;
+}
+
+.formPad {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.jumboImg {
+  margin-left: 90px;
+}
+
+.jumboImg2 {
+    margin-left: 70px;
+    padding-top: 50px;
+  }
+
+  .logoDeuce{
+    margin-left: 70px;
+  }
+
+  /* PROFILE SECTION */
+#profilePic{
+    height: 50%;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+  
+  #editProfilePic{
+    display: none;
+  }
+  
+  #editProfile{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input#myFile{
+    margin-left: 10%
+  }
+  
+  #profileRow{
+    background-color: #F4F2F2;
+    padding-top: 15px;
+    border-bottom: solid 1px lightgrey;
+  }
