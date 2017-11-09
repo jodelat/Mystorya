@@ -1,6 +1,30 @@
+/* ABOUT */
+.aboutImage{
+  margin-top:5%;
+  margin-bottom:5%;
+  margin-right:5%;
+  margin-left:5%;
+  width: 90%;
+  height: 90%;
+}
+.aboutImage2{
+  margin-top:5%;
+  margin-bottom:5%;
+  margin-right:5%;
+  margin-left:5%;
+  width: 75%;
+  height: 75%;
+}
+.aboutImage3{
+  margin-top:5%;
+  margin-bottom:5%;
+  margin-right:5%;
+  margin-left:5%;
+  width: 75%;
+  height: 75%;
+}
 
 /* HEADER NAVBAR AND MODAL SECTION */
-
 #headerContainer{
     padding-top: 5px;
     padding-bottom: 5px;
