@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+
+<style type="text/css">
+    #templates {
+        display: none
+    }
+</style>
+
+...
+<script type="text/javascript">
+    var node = document.getElementById("tmp_audio").cloneNode(true);
+    node.id = ""; // Don't forget :)
+    // modify node contents with DOM manipulation
+    container.appendChild(node);
+</script> 
+...
+<body>
+<div id="templates">
+    <div id="tmp_audio">
+        <a href="#" class="playButton">Play</a>
+        <a href="#" class="muteUnmute">Mute</a>
+        <div class="progressBarOuter">
+            <div class="bytesLoaded"></div>
+            <div class="progressBar"></div>
+        </div>
+        <div class="currentTime">0:00</div>
+        <div class="totalTime">0:00</div>
+    </div>
+</div>
+</body>

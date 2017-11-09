@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Click the button to make a BUTTON element with text.</p>
+    <!-- button that makes it happen -->
+    <button onclick="myFunction()">Try it</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <!-- function(s) performed by the button -->
+    <script type="text/javascript">
+        function myFunction() {
+            /* creates a useless button below <body> */
+            var btn = document.createElement("BUTTON");
+            var t = document.createTextNode("CLICK ME");
+            btn.appendChild(t);
+            document.body.appendChild(btn);
+            /* creates a <p> and text inside <div1> */
+            var x = document.createElement("p");
+            var y = document.createTextNode("This is new.");
+            x.appendChild(y);
+            var element = document.getElementById("div1");
+            element.appendChild(x);
+            /* creates  several lines of HTML*/
+            var html2 = '<div id="div3">div3</div>';
+                html2 += '<div id="div4">div4</div>';
+                html2 += '<div id="div3">div3<div id="div3">div3<div id="div3">div3</div></div></div>';
+                html2 += '<div id="div3">div3</div>';
+                html2 += '<div id="div3">div3</div>';
+            var element2 = document.getElementById("div2");
+            element2.appendchild(html2);
+        }
+    </script>
+
+</body>
+
+</html>
