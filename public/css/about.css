@@ -25,6 +25,7 @@
 }
 
 /* HEADER NAVBAR AND MODAL SECTION */
+
 #headerContainer{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -45,9 +46,9 @@
   }
   
   .form-control-feedback {
-      margin-top: 20px;
-      margin-right: 5px;
-      z-index: 1;
+      margin-top: 4%;
+      margin-right: 2%;
+      /* z-index: 1; */
   }
   
   .glyphicon-align-justify{
@@ -220,17 +221,6 @@
   #searchBox{
     width: 50%;
     padding-top: 20px;
-  }
-  
-  .form-control-feedback{
-    margin-top: 20px;
-  }
-  
-  
-  .form-control-feedback {
-    margin-top: 20px;
-    margin-right: 5px;
-    z-index: 1;
   }
   
   .glyphicon-align-justify{
