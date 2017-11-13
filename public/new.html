@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MyStorya - Read Story</title>
+	<title>MyStorya - Create Story</title>
 
 
 </head>
@@ -50,29 +50,24 @@
 <br>
 
 <!-- New Create Section -brian -->
-
-<button id="1" onClick="reply_click(this.id)">B1</button>
-<button id="2" onClick="reply_click(this.id)">B2</button>
-<button id="3" onClick="reply_click(this.id)">B3</button>
-
-<script type="text/javascript">
-    function reply_click(clicked_id) {
-        alert(clicked_id);
-    }
-</script>
-
 <script>
+
     function layoutFunction(clicked_id) {
         var x = document.getElementById("layoutDIV");
-        alert(clicked_id);
+        var y = document.getElementById("layoutDIV0");
+        alert("id= " + clicked_id);
         if (x.style.display === "none") {
             x.style.display = "block";
+            y.style.display = "none";
+
         } else {
             x.style.display = "none";
+            y.style.display = "block";
 
         }
         
     }
+    
 </script>
 
 <div id="layoutDIV" class="container">
@@ -88,25 +83,27 @@
     <div id="c03" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_3.png"></div>
 </div>
 <div id="r3" class="row">
-    <div id="c04" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_4.png"></div>
-    <div id="c05" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_5.png"></div>
-    <div id="c06" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_6.png"></div>
-    <div id="c07" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_7.png"></div>
+    <div id="c04" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_4.png"></div>
+    <div id="c05" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_5.png"></div>
+    <div id="c06" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_6.png"></div>
+    <div id="c07" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_7.png"></div>
 </div>
 <div id="r4" class="row">
-    <div id="c08" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_8.png"></div>
-    <div id="c09" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_9.png"></div>
-    <div id="c10" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_10.png"></div>
-    <div id="c11" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction()"><img class="pageTemplate img-responsive" src="img/template_11.png"></div>
+    <div id="c08" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_8.png"></div>
+    <div id="c09" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_9.png"></div>
+    <div id="c10" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_10.png"></div>
+    <div id="c11" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_11.png"></div>
 </div>
 </div><!-- end container -->
 
 <div id="layoutDIV0" class="container">
     <div id="r1" class="row">
+        <div id="c12" class="col-sm-3 col-md-3 col-lg-3"><img class="img-responsive" src="img/template_3.png"></div>
     </div>
 </div>
 
-<button onclick="layoutFunction()">Try it</button>
+<br><br><br>
+<button id="devBtn" onclick="layoutFunction(this.id)">hide / show</button>
 
 <!-- <a href='./'><img src="./img/mystolo.png"></a> -->
 <h3 class="shelfTitle text-center">CREATE A NEW STORY</h3>

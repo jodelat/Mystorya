@@ -1,3 +1,11 @@
+.ishidden{
+  display: none;
+}
+
+.nothidden{
+  display: block;
+}
+
 .pageTemplate{
   margin-top: 3%;
   width: 75%;
