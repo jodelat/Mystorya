@@ -68,511 +68,217 @@
         
     }
     
+    function layoutPart2(clicked_id){
+        
+        switch (clicked_id) {
+            case "c00":
+                var newDiv = document.getElementById("tmp0"); /* identifies template to copy */
+                var newTmp = newDiv.cloneNode(true); /* copies template */
+                break
+            case "c01":
+                var newDiv = document.getElementById("tmp1"); /* identifies template to copy */
+                var newTmp = newDiv.cloneNode(true); /* copies template */
+                break
+            case "c02":
+                var newTmp = document.getElementById("tmp2").cloneNode(true); /* copies template */
+                break
+            case "c03":
+                var newTmp = document.getElementById("tmp3").cloneNode(true); /* copies template */
+                break
+            case "c04":
+                var newTmp = document.getElementById("tmp4").cloneNode(true); /* copies template */
+                break
+            case "c05":
+                var newTmp = document.getElementById("tmp5").cloneNode(true); /* copies template */
+                break
+            case "c06":
+                var newTmp = document.getElementById("tmp6").cloneNode(true); /* copies template */
+                break
+            case "c07":
+                var newTmp = document.getElementById("tmp7").cloneNode(true); /* copies template */
+                break
+            case "c08":
+                var newTmp = document.getElementById("tmp8").cloneNode(true); /* copies template */
+                break
+            case "c09":
+                var newTmp = document.getElementById("tmp9").cloneNode(true); /* copies template */
+                break
+            case "c10":
+                var newTmp = document.getElementById("tmp10").cloneNode(true); /* copies template */
+                break
+            case "c11":
+                var newTmp = document.getElementById("tmp11").cloneNode(true); /* copies template */
+                break
+        }
+
+        var newPage = document.getElementById('newPageDiv');
+        var el = document.getElementById('newPageDiv').firstElementChild;
+        /* replace element with newELement */
+        newPage.removeChild(el);
+        newPage.appendChild(newTmp);
+
+        console.log("clicked_id= " + clicked_id);
+        console.log("newPage= " + newPage);
+        console.log("newDiv= " + newDiv);
+        console.log("newTmp= " + newTmp);
+    }
 </script>
 
-<div id="layoutDIV" class="container">
-<div id="r1" class="row">
-    <div id="" class="col-sm-12 col-md-12 col-lg-12">
-        <h1>Choose layout for next page:</h1>
+<!-- html templates -->
+<div id="templatez" class="ishidden">
+    <!-- test div -->
+    <div id="layoutDIV0" class="container">
+        <div id="r1" class="row">
+            <div id="c12" class="col-sm-12 col-md-12 col-lg-12">
+                <img class="img-responsive" src="img/openBook9.png">
+            </div>
+        </div>
     </div>
-</div>
-<div id="r2" class="row">
-    <div id="c00" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_0.png"></div>
-    <div id="c01" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_1.png"></div>
-    <div id="c02" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_2.png"></div>
-    <div id="c03" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_3.png"></div>
-</div>
-<div id="r3" class="row">
-    <div id="c04" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_4.png"></div>
-    <div id="c05" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_5.png"></div>
-    <div id="c06" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_6.png"></div>
-    <div id="c07" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_7.png"></div>
-</div>
-<div id="r4" class="row">
-    <div id="c08" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_8.png"></div>
-    <div id="c09" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_9.png"></div>
-    <div id="c10" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_10.png"></div>
-    <div id="c11" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutFunction(this.id)"><img class="pageTemplate img-responsive" src="img/template_11.png"></div>
-</div>
-</div><!-- end container -->
 
-<div id="layoutDIV0" class="container">
-    <div id="r1" class="row">
-        <div id="c12" class="col-sm-3 col-md-3 col-lg-3"><img class="img-responsive" src="img/template_3.png"></div>
+    <!-- Page Template 0 -->
+    <div id="tmp0" class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <textarea id="A" type="text input" class="form-control tArea" cols="70" rows="43" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+        </div>
     </div>
-</div>
+    <!-- Page Template 1 -->
+    <div id="tmp1" class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="43" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="43" value="Your text here..." size="12" maxlength="110"></textarea>
+        </div>
+    </div>
+    <!-- Page Template 2 -->
+    <div id="tmp2" class="row">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <textarea id="C" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <textarea id="D" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+            </div>
+        </div>
+    </div>
+    <!-- Page Template 3 -->
+    <div id="tmp3" class="row">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" ></textarea>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="C" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="D" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="E" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="F" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+        </div>
+    </div>
+<!-- Page Template 4 -->
+    <div id="tmp4" class="row">
+        <div id="" class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+        </div>
+        <div id="" class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+        </div>
+    </div>
 
-<br><br><br>
+</div> <!-- end templates -->
+
+<!-- create UI HTML -->
+<div id="parentDIV" class="container img-responsive" style="background-image: url('img/openBook12.jpg')">
+
+<div id="mainSection" class="row">
+    
+    <div id="layoutDIV" class="container">
+        <div id="leftCol" class="col-sm-6 col-md-6 col-lg-6"> <!-- leftside -->
+            <div id="r1" class="row">
+                <div id="" class="col-sm-12 col-md-12 col-lg-12">
+                    <h1>Choose layout for next page:</h1>
+                </div>
+            </div>
+            
+            <div id="r2" class="row">
+                <div id="c00" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_0.png "></div>
+                <div id="c01" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_1.png"></div>
+                <div id="c02" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_2.png"></div>
+                <div id="c03" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_3.png"></div>
+            </div>
+            <div id="r3" class="row">
+                <div id="c04" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_4.png"></div>
+                <div id="c05" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_5.png"></div>
+                <div id="c06" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_6.png"></div>
+                <div id="c07" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_7.png"></div>
+            </div>
+            <div id="r4" class="row">
+                <div id="c08" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_8.png"></div>
+                <div id="c09" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_9.png"></div>
+                <div id="c10" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_10.png"></div>
+                <div id="c11" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_11.png"></div>
+            </div>
+        </div><!-- end leftside -->
+        <div id="rightCol" class="col-sm-6 col-md-6 col-lg-6"> <!-- rightside -->
+            <div id="rr0" class="row">
+                <div id="bookInfo" class="col-sm-12 col-md-12 col-lg-12">
+                    <h3>Title:text ChapterTitle:text Chapter:# Page:#</h3>
+                </div>
+            </div>
+            <div id="rr1" class="row">
+                <div id="newPageDiv" class="col-sm-12 col-md-12 col-lg-12">
+                    <div id="tmp0" class="row"> <!-- default -->
+                        <textarea type="text input" class="form-control tArea" cols="70" rows="43" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+                    </div>
+                </div>
+            </div>
+            <div id="rr2" class="row" style="padding: 3%">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <button type="button" class="btn active btn-success">Previous</button>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <button type="button" class="btn active btn-success"><strong>Save</strong></button>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <button type="button" class="btn active btn-success">Next</button>
+                </div>
+            </div>
+        </div><!-- end rightside -->
+    </div><!-- end container -->
+</div><!-- end mainSection -->
+</div><!-- end parentDIV -->
+<br>
+<br>
+<br>
 <button id="devBtn" onclick="layoutFunction(this.id)">hide / show</button>
-
-<!-- <a href='./'><img src="./img/mystolo.png"></a> -->
-<h3 class="shelfTitle text-center">CREATE A NEW STORY</h3>
-<h4 class="shelfTitle text-center">MYSTORYA @pat_hustad</h4>
-
-<br>
-
-
-<!-- This section holds the header navbar -->
-<!-- <nav class="navbar navbar-default">
-  <div id="headerContainer" class="container-fluid">
-
-
-	<div class="col-sm-4 col-md-4 col-lg-4">
-		<a id="headerLogo" class="pull-left" href="/"><img src="img/logoM2.png"></a> -->
-		<!-- <a href='/' class='pull-left'><img src="img/mystolo.png"></a> -->
-	<!-- </div>
-	
-	<div class="col-sm-4 col-md-4 col-lg-4">
-		<div id="searchBox" class="form-group has-feedback center-block">
-		    <input type="text" class="form-control text-center" placeholder="Search MyStorya"/>
-		    <i class="glyphicon glyphicon-search form-control-feedback"></i>
-		</div>
-	</div>
-	
-	<div class="col-sm-4 col-md-4 col-lg-4"> 
-	    <ul class="nav navbar-nav navbar-right">
-	    	<li><a href="#"><span class="glyphicon glyphicon-align-justify"></span></a></li>
-	    </ul>
-	</div>
-
-  </div>
-</nav> -->
-
-<!-- This section holds the story section -->
-
-
-<div id="flipbook" class="center-block">
-    <div class="hard">
-    	<img class="bookImage" src="img/newEdit.png" />
-    	<div id="cover" class="coverText text-center center-block">
-	  		<h1 id="coverTitle">TITLE</h1>
-	  		<br><br><br><br><br><br><br><br><br><br><br><br>
-	  		<h4 id="coverAuthor">By:</h4>
-	  	</div> 
-    </div> 
-    <!-- This section holds the form -->
-<div class="row">
-        <div class="container">
-            <h2>Create New Story:</h2>
-            <br>
-            <div class="col-sm-9 col-md-9 col-lg-9">
-                <label>Title</label>
-                <input id="newTitle" class="form-control" type="Email">			
-                <br>
-            </div>
-    
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <label>Body</label>
-                <textarea id="newBody" class="form-control" rows="10" type="text"></textarea>
-                <br>			
-            </div> 
-    
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <a href="#">Add Photo </a>|
-                <a href="#">Add Video</a>
-            </div>
-    
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <button id="newStory" type="submit" class ="btn-primary btn center-block">Submit Story</button>
-                <br>
-                <br>
-            </div>
-    
-        </div>
-    </div>
-	<!-- <div class="page">
-		<h1 id="storyTitle" class="text-center">FROM RAGS TO RICHES</h1>
-		<h4 id="author" class="text-center">By @badgalriri</h4>
-		<br>
-		<p id="storyBodyLeft">In The Music Issue of i-D we turn up the volume on the pop stars, rock stars and DJs rocking our worlds, and meet the fashion designers for whom music inspires everything they do. She last released an album in 2012, but Rihanna's finally back and on the cover of your favourite magazine. To celebrate her eighth studio album, R8, we meet Robyn Rihanna Fenty, the reigning queen of pop. While details of Ri's new album still remain under wraps, rumours of collaborations with Mike WiLL Made-It, Ne-Yo, DJ Mustard, Kiesza, Sam Smith and Rae Sremmurd have set anticipation at an all time high. Team this with last month's stealth pre-release of FourFiveSeconds, an unexpected acoustic jam with Kanye West and Paul McCartney, and it's fair to say suspense is skyrocketing. </p>
-        <p id="storyBodyLeft">In The Music Issue of i-D we turn up the volume on the pop stars, rock stars and DJs rocking our worlds, and meet the fashion designers for whom music inspires everything they do. She last released an album in 2012, but Rihanna's finally back and on the cover of your favourite magazine. To celebrate her eighth studio album, R8, we meet Robyn Rihanna Fenty, the reigning queen of pop. While details of Ri's new album still remain under wraps, rumours of collaborations with Mike WiLL Made-It, Ne-Yo, DJ Mustard, Kiesza, Sam Smith and Rae Sremmurd have set anticipation at an all time high. Team this with last month's stealth pre-release of FourFiveSeconds, an unexpected acoustic jam with Kanye West and Paul McCartney, and it's fair to say suspense is skyrocketing. </p>
-        
-    </div> -->
-    <div class="page">
-		<br>
-		<img id="storyImage" src="img/ririBk1.jpg" class="img-responsive img-rounded center-block">
-		<br>
-
-	     <iframe id= "videoPlayer" width="90%" height="220px" src="https://www.youtube.com/embed/0RyInjfgNc4" class="center-block"></iframe>
-
-    </div>
-    <div class="page">
-		<h4 id="storyTitle" class="text-center">@badgalriri FROM RAGS TO RICHES</h4>
-		<br>
-        <p id="storyBodyLeft">In The Music Issue of i-D we turn up the volume on the pop stars, rock stars and DJs rocking our worlds, and meet the fashion designers for whom music inspires everything they do. She last released an album in 2012, but Rihanna's finally back and on the cover of your favourite magazine. To celebrate her eighth studio album, R8, we meet Robyn Rihanna Fenty, the reigning queen of pop. While details of Ri's new album still remain under wraps, rumours of collaborations with Mike WiLL Made-It, Ne-Yo, DJ Mustard, Kiesza, Sam Smith and Rae Sremmurd have set anticipation at an all time high. Team this with last month's stealth pre-release of FourFiveSeconds, an unexpected acoustic jam with Kanye West and Paul McCartney, and it's fair to say suspense is skyrocketing. </p>
-        <br>
-        <img id="storyImage" src="img/ririStage.jpg" class="img-responsive img-rounded center-block">
-    </div>
-    <div class="page">
-		<br>
-		<img id="storyImage" src="img/drkRiri.jpg" class="img-responsive img-rounded center-block">
-		<br>
-
-	     <iframe id= "videoPlayer" width="90%" height="220px" src="https://www.youtube.com/embed/lWA2pjMjpBs" class="center-block"></iframe>
-
-    </div>
-    <div class="hard"></div>
-</div>
-<br>
-<br>
-<button type="submit" class ="btn-primary btn center-block">Create New Story <span class="glyphicon glyphicon-plus"> </span></button>
-<br>
-<!-- <div id="profileRow" class="row">
-        <div class="container">
-    
-            <div class="col-sm-6 col-md-6 col-lg-6">
-    
-                <h3 class="text-center">OTHER STORIES BY @pat_hustad</h3>
-                <img id="profilePic" class="center-block" src="img/patProfile.png">
-     -->
-                <!-- <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a data-toggle="pill" href="#yourStories">Your Stories</a></li>
-                    <li><a data-toggle="pill" href="#yourFavorites">Your Favorites</a></li>
-                    <li><a data-toggle="pill" href="#yourFriends">Your Friends</a></li>
-                    <li><a data-toggle="pill" href="#yourProfile">Your Profile</a></li>
-                </ul> -->
-    
-            <!-- </div> 
-    
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div id="yourFriends" class="tab-pane fade">
-                            <h1>@pat_hustad</h1>
-                        </div>					
-        
-                        <div id="yourProfile" class="tab-pane fade">
-        
-                            <div class="row">
-        
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <label>First Name</label>
-                                    <input id="firstName" class="profileText form-control" disabled="true" type="text">
-                                </div>
-        
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <label>Last Name</label>
-                                    <input id="lastName" class="profileText form-control" disabled="true" type="text">
-                                </div>
-        
-                            </div>
-                            
-                            <label>Username</label>
-                            <input id="userName" class="profileText form-control" disabled="true" type="text">
-        
-                            <label>Email</label>
-                            <input id="email" class="profileText form-control" disabled="true" type="Email">
-        
-                            <label>Bio</label>
-                            <textarea id="bio" class="profileText form-control" disabled="true" rows="5" type="text"></textarea>
-        
-                            <label>Location</label>
-                            <input id="location" class="profileText form-control" disabled="true" type="text"><br>
-                            
-                            <div id="yourProfileButtons">
-                                <button type="button" id="editProfileButton" class="btn-primary btn">Edit Profile</button>
-                                <button type="button" id="submitChangesButton" class="btn-primary btn">Submit Changes</button>
-                            </div>
-        
-                        </div>
-        
-                    </div>
-        
-                </div> 
-        
-            </div> -->
-        
-        </div>
-        
-
-<!-- This section hold the footer -->
-<!-- <footer class="footer">
-    <div class="container">
-        <div class = "row">
-            <div class = "col-xs-1 footer-logo">
-                <a href='/' class='pull-left'><img src="img/logoM2.png"></a>
-            </div>
-            <div class = "col-xs-3 col-xs-offset-1  company-info">
-                <div class = "row">
-                    <div class = "col-xs-12 company-info-title">
-                        <h4>MyStorya Inc.</h4>
-                    </div>
-                </div>
-                <div class = "row">
-                    <div class = "col-xs-12">
-                        Palo Alto, Ca
-                    </div>
-                </div>
-                <div class = "row">
-                    <div class = "col-xs-12">
-                        hello@mystorya.com
-                    </div>
-                </div>
-                <div class = "row">
-                    <div class = "col-xs-12">
-                        www.mystorya.com
-                    </div>
-                </div>
-            </div>
-            <div class = "col-xs-2 ">
-                <p class="text-muted">@Copyright 2017 MyStorya Inc.</p>
-            </div>
-            <div class = "col-xs-5  social-icons ">
-                <div class = "col-xs-1 col-xs-offset-9">
-                    <i class="fa fa-github fa-2x"></i>
-                </div>
-                <div class = "col-xs-1 ">
-                    <i class="fa fa-linkedin-square fa-2x "></i>
-                </div>
-                <div class = "col-xs-1 ">
-                    <i class="fa fa-stack-overflow fa-2x"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer> -->
-
-<div id="shelfBackground">
-    <br><br>
-<!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">MY FINISHED STORIES</h3>
-<br>
-<div id="latestStories" class="row shelf">
-<div class="container" style="padding-bottom: 17px;">
-    <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
-            <a href="/read">
-            <div class="books">
-                  <div class="book">
-                     <img class="bookImage" src="img/book2.jpg" />
-                    <div class="overlay">
-                        <div class="text">SHOOTING IN NYC</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/ririBazar.jpg" />
-                    <div class="overlay">
-                        <div class="text">BAZAAR COVER SHOOT</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/ririDior.jpg" />
-                    <div class="overlay">
-                        <div class="text">DIOR</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/riridrake.jpg" />
-                    <div class="overlay">
-                        <div class="text">ME AND DRAKE</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-        <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
-    </div>
-</div>
-</div>
-
-<br>
-<br>
-
-<!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">ALMOST FINISHED STORIES</h3>
-<div id="latestStories" class="row shelf">
-<div class="container" style="padding-bottom: 17px;">
-    <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
-            <a href="/read">
-            <div class="books">
-                  <div class="book">
-                     <img class="bookImage" src="img/newstory1.png" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory2.png" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory3.jpg" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory4.jpg" />
-                    <div class="overlay">
-                        <div class="text">SHOP NOW</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-        <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
-    </div>
-</div>
-</div>
-
-<br>
-<br>
-
-<!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">MY FAVORITES</h3>
-<div id="latestStories" class="row shelf">
-<div class="container" style="padding-bottom: 17px;">
-    <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
-            <a href="/read">
-            <div class="books">
-                  <div class="book">
-                     <img class="bookImage" src="img/newstory1.png" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory2.png" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory3.jpg" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory4.jpg" />
-                    <div class="overlay">
-                        <div class="text">SHOP NOW</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-        <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
-    </div>
-</div>
-</div>
-
-<br>
-<br>
-
-<!-- This section holds the Latest Stories Book Shelf -->
-<h3 class="shelfTitle text-center">TRENDING</h3>
-<div id="latestStories" class="row shelf">
-<div class="container" style="padding-bottom: 17px;">
-    <div id="latestOne" class="col-sm-3 col-md-3 col-lg-3 text-center">
-            <button id="userLeftScroll" class="btn btn-info leftScroll"><span class="glyphicon glyphicon-chevron-left pull-left"></span></button>                    
-            <a href="/read">
-            <div class="books">
-                  <div class="book">
-                     <img class="bookImage" src="img/newstory1.png" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestTwo" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory2.png" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestThree" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory3.jpg" />
-                    <div class="overlay">
-                        <div class="text">Open Story</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-    </div>
-    <div id="latestFour" class="col-sm-3 col-md-3 col-lg-3 text-center">
-        <a href="/read">
-            <div class="books">
-                  <div class="book">
-                    <img class="bookImage" src="img/newstory4.jpg" />
-                    <div class="overlay">
-                        <div class="text">SHOP NOW</div>
-                      </div>
-                  </div>
-            </div>
-        </a>
-        <button id="userRightScroll" class="btn btn-info rightScroll"><span class="glyphicon glyphicon-chevron-right pull-right"></span></button>
-    </div>
-</div>
-</div>
-
-<br>
-<br>
-
+<!-- Works in Progress shelf -->
+<!-- Published Stories shelf -->
+<!-- Favories Shelf -->
 
 <footer class="footer">
         <div class="container">

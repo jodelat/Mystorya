@@ -7,11 +7,17 @@
 }
 
 .pageTemplate{
-  margin-top: 3%;
-  width: 75%;
-  height: 75%;
+  margin-top: 6%;
+  width: 85%;
+  height: 85%;
 }
-
+.tArea{
+ background-color: transparent;
+ border: 2px solid grey;
+}
+.parentDIV{
+  background-image: url("./img/openBook11.jpeg");
+}
 /* HEADER NAVBAR AND MODAL SECTION */
 
 #headerContainer{

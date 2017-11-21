@@ -8,6 +8,11 @@
     <button onclick="myFunction()">Try it</button>
     <div id="div1"></div>
     <div id="div2"></div>
+    <div id="div3">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
     <!-- function(s) performed by the button -->
     <script type="text/javascript">
         function myFunction() {
@@ -23,13 +28,21 @@
             var element = document.getElementById("div1");
             element.appendChild(x);
             /* creates  several lines of HTML*/
-            var html2 = '<div id="div3">div3</div>';
-                html2 += '<div id="div4">div4</div>';
-                html2 += '<div id="div3">div3<div id="div3">div3<div id="div3">div3</div></div></div>';
+            var html2 = document.createElement('div').setAttribute("id", "Div1");
+                html2 += document.createElement('<div id="div4">div4</div>');
+                html2 += document.createElement('<div id="div3">div3<div id="div3">div3<div id="div3">div3</div></div></div>');
                 html2 += '<div id="div3">div3</div>';
                 html2 += '<div id="div3">div3</div>';
             var element2 = document.getElementById("div2");
             element2.appendchild(html2);
+            /* replace html */
+            var parent = document.getElementById("div3"); /* store id div3 as 'parent' */
+            var child = document.getElementById("p1"); /* store id p1 as 'child' */
+            var para = document.createElement("p"); /* create new <p> element as 'para' */
+            var node = document.createTextNode("This is new paragraph."); /* creates some text as 'node' */
+            para.appendChild(node); /* appends the new textNode to the new <p> element */
+            parent.replaceChild(para,child); /* replaces p1 with the new <p> element */
+                        
         }
     </script>
 
