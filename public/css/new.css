@@ -6,6 +6,10 @@
   display: block;
 }
 
+body, html, .container-fluid {
+     height: 100%;
+}
+
 .pageTemplate{
   margin-top: 6%;
   width: 85%;

@@ -1,32 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>MyStorya - Create Story</title>
+</head>
 
-<style type="text/css">
-    #templates {
-        display: none
-    }
-</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/new.css">
 
-...
-<script type="text/javascript">
-    var node = document.getElementById("tmp_audio").cloneNode(true);
-    node.id = ""; // Don't forget :)
-    // modify node contents with DOM manipulation
-    container.appendChild(node);
-</script> 
-...
 <body>
-<div id="templates">
-    <div id="tmp_audio">
-        <a href="#" class="playButton">Play</a>
-        <a href="#" class="muteUnmute">Mute</a>
-        <div class="progressBarOuter">
-            <div class="bytesLoaded"></div>
-            <div class="progressBar"></div>
+    <div id="uSelect" class="row" style="border: 3px">
+
+    <div class="row" style="padding: 2%">
+        <div id="txtInput" class="col-sm-6 col-md-6 col-lg-6">
+            <img class="img-responsive" src="public/img/icon_txt.png">
         </div>
-        <div class="currentTime">0:00</div>
-        <div class="totalTime">0:00</div>
+        <div id="imgInput" class="col-sm-6 col-md-6 col-lg-6">
+            <img class="img-responsive" src="public/img/icon_img.png">
+        </div>
     </div>
-</div>
+    <div class="row" style="padding: 2%">
+        <div id="vidInput" class="col-sm-6 col-md-6 col-lg-6">
+            <img class="img-responsive" src="public/img/icon_youtube.png">
+        </div>
+        <div id="audInput" class="col-sm-6 col-md-6 col-lg-6">
+            <img class="img-responsive" src="public/img/icon_audio.png">
+        </div>
+    </div>
+
+    </div> <!-- end uSelect -->
+
+    <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+        <div class="h-25 d-inline-block" style="background-color: rgba(0,0,255,.1)">Height 25%</div>
+        <div class="h-50 d-inline-block" style="background-color: rgba(0,0,255,.1)">Height 50%</div>
+        <div class="h-75 d-inline-block" style="background-color: rgba(0,0,255,.1)">Height 75%</div>
+        <div class="h-100 d-inline-block" style="background-color: rgba(0,0,255,.1)">Height 100%</div>
+    </div>
+
+        <!-- Page Template 1 -->
+        <div id="tmp1" class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="43" value="Your text here..." size="12" maxlength="110"
+                    autofocus></textarea>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="43" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+        </div>
+        
 </body>
+</html>

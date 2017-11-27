@@ -3,8 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MyStorya - Create Story</title>
-
-
 </head>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,7 +15,6 @@
 <nav class="navbar navbar-default navbar-fixed-top navigation">
     <div id="1A" class="row" style="background-color :white;">
 <div id="headerContainer" class="container"> 
-
     
     <!-- LOGO IMAGE & TEXT -->    
     <div class="col-sm-4 col-md-4 col-lg-4">
@@ -49,7 +46,7 @@
 <br>
 <br>
 
-<!-- New Create Section -brian -->
+<!-- New Create Section -->
 <script>
 
     function layoutFunction(clicked_id) {
@@ -72,12 +69,10 @@
         
         switch (clicked_id) {
             case "c00":
-                var newDiv = document.getElementById("tmp0"); /* identifies template to copy */
-                var newTmp = newDiv.cloneNode(true); /* copies template */
+                var newTmp = document.getElementById("tmp0").cloneNode(true); /* copies template */
                 break
             case "c01":
-                var newDiv = document.getElementById("tmp1"); /* identifies template to copy */
-                var newTmp = newDiv.cloneNode(true); /* copies template */
+                var newTmp = document.getElementById("tmp1").cloneNode(true); /* copies template */
                 break
             case "c02":
                 var newTmp = document.getElementById("tmp2").cloneNode(true); /* copies template */
@@ -144,7 +139,8 @@
     <!-- Page Template 1 -->
     <div id="tmp1" class="row">
         <div class="col-sm-6 col-md-6 col-lg-6">
-            <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="43" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+            <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="43" value="Your text here..." size="12" maxlength="110"
+                autofocus></textarea>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6">
             <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="43" value="Your text here..." size="12" maxlength="110"></textarea>
@@ -173,24 +169,35 @@
     <div id="tmp3" class="row">
         <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
-                <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
+                <textarea id="A" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110" autofocus></textarea>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4">
-                <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110" ></textarea>
+                <textarea id="B" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110" ></textarea>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4">
-                <textarea id="C" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+                <textarea id="C" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110"></textarea>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4">
-                <textarea id="D" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+                <textarea id="D" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110"></textarea>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4">
-                <textarea id="E" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+                <textarea id="E" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110"></textarea>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4">
-                <textarea id="F" type="text input" class="form-control tArea" cols="35" rows="21" value="Your text here..." size="12" maxlength="110"></textarea>
+                <textarea id="F" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="G" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="H" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110"></textarea>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <textarea id="I" type="text input" class="form-control tArea" cols="35" rows="14" value="Your text here..." size="12" maxlength="110"></textarea>
             </div>
         </div>
     </div>
@@ -208,6 +215,22 @@
         </div>
     </div>
 
+    <!-- Page Template 5 -->
+    <div id="tmp5" class="row">
+        <div class="row" style="padding: 2%; border: 2px solid black">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="uSelect" class="row" style="padding: 2%; border: 5px solid black"><div class="row"><div id="txtInput" class="col-sm-6 col-md-6 col-lg-6" onclick="layoutSel(this.id)"><img class="img-responsive" src="img/icon_txt.png"></div><div id="imgInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_img.png"></div></div><div class="row"><div id="vidInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_youtube.png"></div><div id="audInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_audio.png"></div></div></div><!-- end uSelect -->
+            </div>
+        </div>
+        <div class="row" style="padding: 2%; border: 2px solid black">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div id="uSelect" class="row" style="padding: 2%; border: 5px solid black"><div class="row"><div id="txtInput" class="col-sm-6 col-md-6 col-lg-6" onclick="layoutSel(this.id)"><img class="img-responsive" src="img/icon_txt.png"></div><div id="imgInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_img.png"></div></div><div class="row"><div id="vidInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_youtube.png"></div><div id="audInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_audio.png"></div></div></div><!-- end uSelect -->
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div id="uSelect" class="row" style="padding: 2%; border: 5px solid black"><div class="row"><div id="txtInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_txt.png"></div><div id="imgInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_img.png"></div></div><div class="row"><div id="vidInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_youtube.png"></div><div id="audInput" class="col-sm-6 col-md-6 col-lg-6"><img class="img-responsive" src="img/icon_audio.png"></div></div></div><!-- end uSelect -->
+            </div>
+        </div>
+    </div>
 </div> <!-- end templates -->
 
 <!-- create UI HTML -->
@@ -222,8 +245,7 @@
                     <h1>Choose layout for next page:</h1>
                 </div>
             </div>
-            
-            <div id="r2" class="row">
+           <div id="r2" class="row">
                 <div id="c00" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_0.png "></div>
                 <div id="c01" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_1.png"></div>
                 <div id="c02" class="col-sm-3 col-md-3 col-lg-3 pageTemp" onclick="layoutPart2(this.id)"><img class="pageTemplate img-responsive" src="img/template_2.png"></div>
